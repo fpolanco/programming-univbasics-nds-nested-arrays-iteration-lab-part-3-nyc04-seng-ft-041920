@@ -1,3 +1,3 @@
 def join_nested_strings(src)
-  src.map{ |string, string| [string,string.join("  ")]}
+  src.flatten.grep(String).join(' ')
 end
